@@ -4,7 +4,7 @@ import RentsList from './components/RentsList'
 import './App.css';
 
 class App extends Component {
-    /* state = {
+    state = {
          rents: [
              {
                  userId: 2,
@@ -63,14 +63,14 @@ class App extends Component {
                  }
              }
          ]
-     };*/
+     };
 
     render() {
         return (
             <div className="App">
                 <AppHeader/>
                 <main className={"ui main text container"}>
-                    <RentsList/>
+                    <RentsList rents={this.state.rents} />
                 </main>
             </div>
         );
